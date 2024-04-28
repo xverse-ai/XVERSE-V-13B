@@ -1,0 +1,6 @@
+datasets:
+  laion:
+    data_type: images
+    build_info:
+      with_instruction: True
+      storage: /path/to/ccs/webdataset/{00000..05421}.tar

@@ -1,0 +1,69 @@
+model:
+  arch: vxverse
+  model_type: pretrain_xverse13b-chat
+  max_txt_len: 16
+
+  vit_model: "openai/clip-vit-large-patch14-224"
+  vit_path: "Your openai/clip-vit-large-patch14-224 path"
+
+  end_sym: "<|endoftext|>"
+  prompt_template: 'Human: {}\nAssistant: '
+
+  low_resource: True
+
+  ckpt: "Your ckpt path"
+
+  lora_r: 128
+  lora_alpha: 256
+  lora_dropout: 0.05
+  lora_target_modules: "all_linear"
+
+  has_qformer: False
+  n_proj_layers: 2
+#  num_query_token: 64
+
+  freeze_llm: True
+  freeze_vit: True
+
+
+
+datasets:
+  gqa:
+    vis_processor:
+      train:
+        name: "hd_image_train"
+        image_size: 224
+    text_processor:
+      train:
+        name: "base_text_process"
+
+evaluation_datasets:
+  gqa:
+    eval_file_path: "Your gqa test jsonl path"
+    img_path: "Your gqa test images dir"
+    max_new_tokens: 16
+    batch_size: 5
+  okvqa:
+    eval_file_path: "Your gqa test dir"
+    img_path: "Your gqa test images dir"
+    max_new_tokens: 16
+    batch_size: 5
+  chat:
+    eval_file_path: "Your pure-text data path"
+    max_new_tokens: 2048
+    batch_size: 1
+
+run:
+  task: image_text_pretrain
+  name: vxverse_evaluation
+  save_path: 'Your dir to save results'
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+datasets:
+  align:
+    data_type: images
+    build_info:
+      storage: /path/to/triple/
+      end_sym: "<|endoftext|>"
+      max_context_len: 500
+      max_txt_len: 500
+      max_seq_len: 992
+      datasets:
+        AOK-VQA:
+        ChineseFoodTriple:
+        CLEVR:
+        CLEVR_CoGenT:
+        CUB-200-2011:
+        DAQUAR:
+        LRV-Instruction:
+        LRV-Instruction_chart:
+        OCR-VQA:
+        OK-VQA:
+        PathVQA:
+        PMC-CaseReport:
+        ScienceQA:
+        sketch:
+        Slake:
+        ST-VQA:
+        VisDial:
+        VQA-RAD:
+        VQAv2:
+        VQAv2_AS:
+        VQAv2_BBAS:
+        IconQA:
+        TextVQA:
+        ShareGPT4V_instruct:
+        ShareGPT4V_mix:
+        ShareGPT4V_captioner:
+        miniGPT4_CCS_Align:
+        LLaVA_V1_5_mix665k:
+        LLaVA_V1_5_instruct158k:
+        Geo170K_alignment:
+        Geo170K_qa_tuning:
+        GeoQA:
+        GeoQA+_length:
+        GeoQA+_angle:
+        GeoQA+_area:
+        VisualGenome:
+        xGQA:
+        GQA:
+        DVQA:
+        ChartQA:
+        AI2D:
+        DocVQA:
+        SynthDoG-EN:
+        VizWiz_VQA:
+        CLEVR-math:
+        LLaVA-Instruct-150K_ZH:
+        PlotQA:
+        PISC:
+        ShapeWorld:
+        UCF101:
+        HMDB51:
+        FER-2013:
+        ArxivQA:
+        brainscape-std:
+        shitishuxe-std:
+        examcoo-std:
+        KonIQ-10k:
+        pure_text:
+
+
+
+
+
+
+

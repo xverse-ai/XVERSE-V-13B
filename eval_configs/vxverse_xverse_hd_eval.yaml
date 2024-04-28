@@ -1,0 +1,42 @@
+model:
+  arch: vxverse
+  model_type: pretrain_xverse13b-chat
+  max_txt_len: 16
+
+  vit_model: "openai/clip-vit-large-patch14-224"
+  vit_path: "Your openai/clip-vit-large-patch14-224 path"
+
+  end_sym: "<|endoftext|>"
+  prompt_template: 'Human: {}\nAssistant: '
+
+  low_resource: True
+
+  ckpt: "Your ckpt path"
+
+  lora_r: 128
+  lora_alpha: 256
+  lora_dropout: 0.05
+  lora_target_modules: "all_linear"
+
+  has_qformer: False
+  n_proj_layers: 2
+#  num_query_token: 64
+
+  freeze_llm: True
+  freeze_vit: True
+
+
+
+datasets:
+  gqa:
+    vis_processor:
+      train:
+        name: "hd_image_train"
+        image_size: 224
+    text_processor:
+      train:
+        name: "base_text_process"
+
+run:
+  task: image_text_pretrain
+

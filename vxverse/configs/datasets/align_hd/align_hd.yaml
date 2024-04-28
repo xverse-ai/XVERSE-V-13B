@@ -1,0 +1,17 @@
+datasets:
+  align_hd:
+    data_type: images
+    build_info:
+      storage: /path/to/triple/
+      end_sym: "<|endoftext|>"
+      max_seq_len: 2048
+      datasets:
+        dataset1:
+        dataset2
+
+
+
+
+
+
+

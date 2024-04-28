@@ -1,0 +1,5 @@
+model:
+  arch: vxverse
+
+  llama_model: "./XVERSE-13B-Chat-latest"
+
