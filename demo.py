@@ -55,7 +55,8 @@ model = model_cls.from_config(model_config).to('cuda:{}'.format(args.gpu_id))
 
 CONV_VISION = conv_dict[model_config.model_type]
 # CONV_VISION.system = ""
-vis_processor_cfg = cfg.datasets_cfg.cc_sbu_align.vis_processor.train
+# vis_processor_cfg = cfg.datasets_cfg.cc_sbu_align.vis_processor.train
+vis_processor_cfg = cfg.datasets_cfg.gqa.vis_processor.train
 vis_processor = registry.get_processor_class(vis_processor_cfg.name).from_config(vis_processor_cfg)
 
 if "vicuna" in model_config.model_type:
