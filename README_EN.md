@@ -69,7 +69,7 @@ To comprehensively assess the model's performance, we conducted thorough testing
 
 For all the compared models mentioned above, we prioritize reporting their officially published results. In cases where official results are unavailable, we rely on the reported results from the [OpenCompass leaderboard](https://rank.opencompass.org.cn/leaderboard-multimodal). 
 If the corresponding dataset evaluation results are still missing from the OpenCompass leaderboard, we include data obtained from our own evaluation process. 
-The evaluation framework used adheres to the [OpenCompass evaluation framework](https://github.com/open-compass/OpenCompass/).
+The evaluation framework used adheres to the [VLMEvalKit evaluation framework](https://github.com/open-compass/VLMEvalKit/).
 
 ### Traditional VQA tasks
 The traditional Visual Question Answering (VQA) task, frequently referenced in academic literature in the field of multimodal visual question answering, holds significant academic reference value. 
@@ -86,7 +86,7 @@ Therefore, we will also report relevant evaluation results on datasets of this k
 
 
 Similarly, for all the compared models mentioned above, we prioritize reporting their officially published results. In the absence of official results, data is obtained from our own evaluation process. 
-The evaluation framework used adheres to the [OpenCompass evaluation framework](https://github.com/open-compass/OpenCompass/).
+The evaluation framework used adheres to the [VLMEvalKit evaluation framework](https://github.com/open-compass/VLMEvalKit/).
 
 
 ## Demo 
