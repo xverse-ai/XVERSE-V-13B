@@ -63,7 +63,7 @@
 > <sup>1：带 `*`  号的模型是闭源模型</sup> 
 
 对于上述所有比较模型，我们优先汇报其官方公布的结果。在缺少官方结果的情况下，我们采用了 [OpenCompass 榜单](https://rank.opencompass.org.cn/leaderboard-multimodal)的报告结果。若 OpenCompass 榜单上仍然缺少相应的数据集评估结果，
-则来自于我们自行执行的评估流程所获得的数据。而评测框架则采用了[OpenCompass 评估框架](https://github.com/open-compass/OpenCompass/)。
+则来自于我们自行执行的评估流程所获得的数据。而评测框架则采用了[VLMEvalKit 评估框架](https://github.com/open-compass/VLMEvalKit/)。
 
 ### 传统VQA类任务
 传统VQA任务，作为多模态视觉问答领域学术论文常引用的评测任务，具备显著的学术参考价值。因此，我们也将在此类数据集上报告相关的评测结果。
@@ -76,7 +76,7 @@
 | VizWiz             |   **81.9**   |         54.6          |   75.6     |    64.0      |    50.1     |      44.0       |    41.4     |       70.8        |
 | TextVQA            |   **74.2**   |         64.3          |   53.7     |    62.4      |    63.8     |      69.6       |    63.1     |       54.0        |
 
-同理，对于上述所有比较模型，我们优先汇报其官方公布的结果。在缺少官方结果的情况下，则来自于我们自行执行的评估流程所获得的数据。而评测框架则采用了[OpenCompass 评估框架](https://github.com/open-compass/OpenCompass/)。
+同理，对于上述所有比较模型，我们优先汇报其官方公布的结果。在缺少官方结果的情况下，则来自于我们自行执行的评估流程所获得的数据。而评测框架则采用了[VLMEvalKit 评估框架](https://github.com/open-compass/VLMEvalKit/)。
 
 
 ## 效果示例
